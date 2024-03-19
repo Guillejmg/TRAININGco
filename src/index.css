@@ -18,6 +18,17 @@ video{
   object-fit: cover;
 }
 
+/* @keyframes show{
+  from{
+    opacity: 0;
+    scale: 10%;
+  }
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+} */
+
 .video_button{
   position: absolute;
   width: 100%;
@@ -28,6 +39,10 @@ video{
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0,.4);
+  /* view-timeline-name: --logo;
+  view-timeline-axis: initial;
+  animation-timeline: --logo;
+  animation-name: show; */
 }
 
 button{
