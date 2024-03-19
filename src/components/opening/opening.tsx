@@ -1,6 +1,9 @@
 import video_ej from '../../assets/video_ej.mp4'
 import logo_vector from '../../assets/logo_vector.png'
+
 import { useTypewriter, Cursor } from 'react-simple-typewriter' 
+
+import './opening.scss'
 
 export function Opening (){
   const [text] = useTypewriter({
