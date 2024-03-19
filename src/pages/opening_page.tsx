@@ -1,4 +1,4 @@
-import { Opening } from "../components/opening/opening"
+import  Opening  from "../components/opening/opening"
 
 const OpeningPage = () => {
   return (

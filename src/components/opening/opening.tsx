@@ -4,8 +4,9 @@ import logo_vector from '../../assets/logo_vector.png'
 import { useTypewriter, Cursor } from 'react-simple-typewriter' 
 
 import './opening.scss'
+import { Link } from 'react-router-dom'
 
-export function Opening (){
+const Opening = () => {
   const [text] = useTypewriter({
     words: ['entrenamiento', 'rehabilitación', 'movilidad', 'trabajo duro', 'constancia', 'mejora'],
     loop: 1000,
@@ -17,14 +18,16 @@ export function Opening (){
     <div className='video'>
       <video src={video_ej} autoPlay loop muted/>
       <div className='video_button'>
-        <button type='button'>
-          <div className='video_button_text'>Pulsa la imagen</div> 
-          <img src={logo_vector} />
-          <span> Somos {text}<Cursor cursorStyle= '<'/></span>
-          
-        </button>
-
+        <Link to="/home">
+          <button type='button'>
+            <div className='video_button_text'>Pulsa la imagen</div> 
+            <img src={logo_vector} />
+            <span> Somos {text}<Cursor cursorStyle= '<'/></span>
+          </button>
+        </Link>
       </div>
     </div>
   )
 }
+
+export default Opening;

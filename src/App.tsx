@@ -1,12 +1,12 @@
 import './App.css'
-import { Opening } from './components/opening/opening'
+import { AppRoutes } from './app_routes/app_routes'
 
 function App() {
 
   return (
-    <>
-      <Opening></Opening>
-    </>
+    <div className='app'>
+      <AppRoutes></AppRoutes>
+    </div>
   )
 }
 
