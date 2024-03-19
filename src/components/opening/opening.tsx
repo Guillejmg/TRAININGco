@@ -21,7 +21,7 @@ const Opening = () => {
         <Link to="/home">
           <button type='button'>
             <div className='video_button_text'>Pulsa la imagen</div> 
-            <img src={logo_vector} />
+            <img src={logo_vector} alt='logo'/>
             <span> Somos {text}<Cursor cursorStyle= '<'/></span>
           </button>
         </Link>

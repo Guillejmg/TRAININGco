@@ -1,0 +1,22 @@
+.header_corner{
+  position: fixed;
+  top: 0;
+  padding: 180px;
+  background-color: #234C8D;
+.header_corner_img{
+    position: relative;
+    bottom: 150px;
+    right: 150px;
+    width: 100px;
+    height: 90px;
+  }
+}
+
+.header_corner::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 455px solid  #234C8D;
+  border-right: 460px solid white;
+}
