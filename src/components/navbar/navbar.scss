@@ -1,12 +1,29 @@
 .navbar{
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10rem;
   position: fixed;
   top: 0;
-  padding: 2rem;
+  width: 100%;
+  padding: 1rem;
   background-color: #234C8D;
-  img{
-    height: 45px;
-    width: 155px;
+  list-style-type: none;
+  z-index: 1;
+  
+  .navbar_link{
+    background-color: #234C8D;
+    color: white;
+  }
+  
+  .navbar_img{
+    position: relative;
+    right: 40px;
+    background-color: #234C8D;
+    img{
+      height: 45px;
+      width: 155px;
+    }
   }
 }

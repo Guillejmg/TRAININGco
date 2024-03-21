@@ -1,16 +1,18 @@
 .header_corner{
-  position: fixed;
-  top: 0;
-  padding: 180px;
-  background-color: #234C8D;
+  position: relative;
+  z-index: 2;
+  animation: slideLeft 4s ease-out forwards;
+
 .header_corner_img{
     position: relative;
     bottom: 150px;
     right: 150px;
     width: 100px;
     height: 90px;
+    background-color: #234C8D;
   }
 }
+
 
 .header_corner::before{
   content: "";
@@ -18,5 +20,26 @@
   bottom: 0;
   right: 0;
   border-top: 455px solid  #234C8D;
-  border-right: 460px solid white;
+  border-right: 460px solid transparent;
+}
+
+
+@keyframes slideLeft {
+  0% {
+    position: relative;
+    left: -10000px;
+  }
+  50%{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 180px;
+  }
+  100% {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 180px;
+    
+  }
 }

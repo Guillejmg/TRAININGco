@@ -4,7 +4,7 @@ import {Route, Routes} from 'react-router-dom'
 
 // Pages
 const OpeningPage = lazy(() => import('../pages/opening_page'))
-const HomePage = lazy(() => import('../pages/home_page'))
+const HomePage = lazy(() => import('../pages/home_page/home_page'))
 
 
 export function AppRoutes() {
