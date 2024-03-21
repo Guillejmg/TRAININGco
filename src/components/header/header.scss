@@ -1,9 +1,9 @@
-.header_corner{
+.header_corner{ // Link with the animation
   position: relative;
   z-index: 2;
-  animation: slideLeft 4s ease-out forwards;
+  animation: slideLeft 2s ease-out forwards;
 
-.header_corner_img{
+.header_corner_img{ // Logo position
     position: relative;
     bottom: 150px;
     right: 150px;
@@ -14,7 +14,7 @@
 }
 
 
-.header_corner::before{
+.header_corner::before{ // Making div into triangle
   content: "";
   position: absolute;
   bottom: 0;
@@ -23,8 +23,20 @@
   border-right: 460px solid transparent;
 }
 
+.header_corner::after { // White line 
+  content: "";
+  position: absolute;
+  right: 250px;
+  bottom: -100px;
+  height: 700px; 
+  background-color: transparent;
+  border-left: 50px solid white;
+  transform: rotate(45deg);
+  z-index: 2; 
+}
 
-@keyframes slideLeft {
+
+@keyframes slideLeft { // animation
   0% {
     position: relative;
     left: -10000px;

@@ -5,10 +5,10 @@ const Header = () => {
   return(
     <>
       <div className="header">
+        <Navbar/>
         <div className="header_corner">
           <img className="header_corner_img"  src={logo_vector} alt="logo" />
         </div>
-        <Navbar/>
       </div>
     </>
   )

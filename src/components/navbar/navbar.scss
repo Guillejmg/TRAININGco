@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 10rem;
+  gap: 15rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -11,6 +11,7 @@
   background-color: #234C8D;
   list-style-type: none;
   z-index: 1;
+  animation: slideDown 2s ease-out forwards;
   
   .navbar_link{
     background-color: #234C8D;
@@ -25,5 +26,27 @@
       height: 45px;
       width: 155px;
     }
+  }
+}
+
+@keyframes slideDown { // animation
+  0% {
+    position: relative;
+    top: -10000px;
+  }
+
+  50%{
+    position: fixed;
+    top: 0;
+  }
+
+  75%{
+    position: fixed;
+    top: 0;
+  }
+
+  100% {
+    position: fixed;
+    top: 0;
   }
 }
