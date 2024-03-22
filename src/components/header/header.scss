@@ -2,6 +2,10 @@
   position: relative;
   z-index: 2;
   animation: slideLeft 2s ease-out forwards;
+  background-image: 
+    //linear-gradient(to top, transparent 5%),
+    linear-gradient(135deg, rgb(0 0 0/50%) 45%, transparent 53%);
+    
 
 .header_corner_img{ // Logo position
     position: relative;
