@@ -1,4 +1,38 @@
-.carousel_img1{
-  height: 500px;
-  width: 100%;
+.carousel{
+    width: 100%;
+    overflow: hidden;
+  .carousel__list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200%;
+    list-style-type: none;
+    transition: all 1s ease;
+    transform: translateX(0%);
+    animation: slide 5s infinite alternate ease-in-out;
+
+    .carousel__list-1{
+      width: calc(100%/2);
+      .carousel__img1{
+        height: 500px;
+        width: 100%;
+        box-sizing: border-box;
+        }
+    }
+    .carousel__list-2{
+      width: calc(100%/2);
+      .carousel__img2{
+        height: 500px;
+        width: 100%;
+        box-sizing: border-box;
+        }
+    }
+  }
+
+  @keyframes slide {
+    0%{margin-left: 0;}
+    100%{margin-left: -100%;}
+  
+  }
 }
