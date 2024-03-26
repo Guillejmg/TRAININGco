@@ -1,28 +1,44 @@
 .carousel{
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;// Para que todo lo que salga de la pantalla en nuestra animacion se oculte.
+
   .carousel__list{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    width: 200%;
+
+    width: 300%;// por que hay tres elementos en este div
     list-style-type: none;
-    transition: all 1s ease;
-    transform: translateX(0%);
-    animation: slide 5s infinite alternate ease-in-out;
+
+    transition: all 11s ease;// Tiempo de duracion  y tipo de movimiento  en la animacion que hems fija  en el traslate
+    transform: translateX(0%);// Punto  del  eje X donde empieza y se  fija la  animacion,  en este  caso en la primera imagen
+    animation: slide 11s infinite alternate ease-in-out;// Animación, los seg tienen que estar coordinados con los de transition para no da  errores  en la  animacion 
 
     .carousel__list-1{
-      width: calc(100%/2);
+      width: calc(100%/3);// por que queremos que  cada elemento ocupe  el 100% del espacio en nuestra animación
+
       .carousel__img1{
         height: 500px;
         width: 100%;
         box-sizing: border-box;
         }
     }
+
     .carousel__list-2{
-      width: calc(100%/2);
+      width: calc(100%/3);
+
       .carousel__img2{
+        height: 500px;
+        width: 100%;
+        box-sizing: border-box;
+        }
+    }
+
+    .carousel__list-3{
+      width: calc(100%/3);
+
+      .carousel__img3{
         height: 500px;
         width: 100%;
         box-sizing: border-box;
@@ -30,9 +46,32 @@
     }
   }
 
-  @keyframes slide {
+  // .carousel__point{ estilos para los puntos
+  //   width: 100%;
+  //   padding: 1em;
+  //   list-style-type: none;
+
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 1rem;
+
+  //   position: relative;
+  //   bottom: 3em;
+
+  //   .carousel__point-size{
+  //     width: .5em;
+  //     height: .5em;
+  //     background-color: grey;
+  //     border-radius: 1rem;
+  //   }
+  // }
+
+  @keyframes slide {// Hay que poner tresporcentages por  que jugamos con 3 elementos
     0%{margin-left: 0;}
-    100%{margin-left: -100%;}
+    50%{margin-left: -100%;}
+    100%{margin-left: -200%;}
   
   }
 }
