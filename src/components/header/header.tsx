@@ -1,4 +1,4 @@
-import logo_vector from '../../assets/logo_vector.png'
+import Corner from '../corner/corner';
 import Navbar from '../navbar/navbar';
 import './header.scss'
 const Header = () => {
@@ -6,9 +6,7 @@ const Header = () => {
     <>
       <div className="header">
         <Navbar/>
-        <div className="header_corner">
-          <img className="header_corner_img"  src={logo_vector} alt="logo" />
-        </div>
+        <Corner/>
       </div>
     </>
   )

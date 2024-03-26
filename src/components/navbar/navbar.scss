@@ -11,7 +11,7 @@
   background-color: #234C8D;
   list-style-type: none;
   z-index: 1;
-  animation: slideDown 2s ease-out forwards;
+  //animation: slideDown 2s ease-out forwards;
   box-shadow: 5px 5px 5px black;
   
   .navbar_link{
@@ -28,6 +28,10 @@
       width: 155px;
     }
   }
+}
+
+.animation-active-navbar{
+  animation: slideDown 2s ease-out forwards;
 }
 
 @keyframes slideDown { // animation
