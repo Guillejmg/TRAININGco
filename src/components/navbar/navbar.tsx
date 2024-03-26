@@ -16,7 +16,7 @@ const Navbar = ()=>{
   
   return (
     <>
-      <ul  className={`navbar ${animate ? 'navbar'&&'animation-active-navbar' : 'navbar'}`}>
+      <ul  className={`navbar ${animate ? 'navbar'&&'animation-active-navbar' : ''}`}>
         <li>
           <Link className='navbar_link' to="/home">HOME</Link>
         </li>
