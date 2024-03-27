@@ -15,14 +15,14 @@ const Opening = () => {
   })
 
   return(
-    <div className='video'>
-      <video src={video_ej} autoPlay loop muted/>
-      <div className='video_button'>
-        <Link to="/home">
-          <button type='button'>
-            <div className='video_button_text'>Pulsa la imagen</div> 
-            <img src={logo_vector} alt='logo'/>
-            <span> Somos {text}<Cursor cursorStyle= '<'/></span>
+    <div className='opening'>
+      <video className='opening__video' src={video_ej} autoPlay loop muted/>
+      <div className='opening__interactive'>
+        <Link className='opening__link' to="/home">
+          <button className='opening__button' type='button'>
+            <p className='opening__text'>Pulsa el logo</p> 
+            <img className='opening__logo' src={logo_vector} alt='logo'/>
+            <p className='opening__typewriter'> Somos {text} <Cursor cursorStyle= '<'/></p>
           </button>
         </Link>
       </div>

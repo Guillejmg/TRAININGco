@@ -7,11 +7,11 @@
   background-image: linear-gradient(135deg, rgb(0 0 0/50%) 45%, transparent 53%);
 }
 
-.animation-active-corner{
+.corner--animation{
   animation: slideLeft 2s ease-out forwards;
 }
 
-.corner_img{ // Logo position
+.corner__img{ // Logo position
     position: relative;
     bottom: 150px;
     right: 150px;

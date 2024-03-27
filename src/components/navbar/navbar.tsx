@@ -16,21 +16,21 @@ const Navbar = ()=>{
   
   return (
     <>
-      <ul  className={`navbar ${animate ? 'navbar'&&'animation-active-navbar' : ''}`}>
-        <li>
-          <Link className='navbar_link' to="/home">HOME</Link>
+      <ul  className={`navbar ${animate ? 'navbar'&&'navbar--animation' : ''}`}>
+        <li className='navbar__item'>
+          <Link className='navbar__link' to="/home">HOME</Link>
         </li>
-        <li>
-          <Link className='navbar_link' to="/services">QUÉ OFRECEMOS</Link>
+        <li className='navbar__item'>
+          <Link className='navbar__link' to="/services">QUÉ OFRECEMOS</Link>
         </li>
-        <li>
-          <Link className='navbar_link' to="/us">NOSOTROS</Link>
+        <li className='navbar__item'>
+          <Link className='navbar__link' to="/us">NOSOTROS</Link>
         </li>
-        <li>
-          <Link className='navbar_link' to="/contact">CONTÁCTANOS</Link>
+        <li className='navbar__item'>
+          <Link className='navbar__link' to="/contact">CONTÁCTANOS</Link>
         </li>
-        <li className='navbar_img'>
-          <img  src={IMG_1335} alt="TRAININGco" />
+        <li className='navbar__item navbar__item--img'>
+          <img className='navbar__img' src={IMG_1335} alt="TRAININGco" />
         </li>
       </ul>
     </>
