@@ -5,7 +5,7 @@
   justify-content: flex-end;
 
   z-index: 1;
-  gap: 15rem;
+  gap: 10vw;
   position: fixed;
   top: 0;
   width: 100%;
@@ -29,8 +29,9 @@
   
   .navbar_img{
     position: relative;
-    right: 40px;
+    right: 2em;
     background-color: #234C8D;
+    margin-left: 1em;
     img{
       height: 45px;
       width: 155px;

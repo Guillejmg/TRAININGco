@@ -15,9 +15,11 @@ const Corner = () => {
   },[location.pathname])
 
   return(
+
       <div className={`corner ${animate ? 'corner'&&'animation-active-corner' : ''}`}>
         <img className="corner_img"  src={logo_vector} alt="logo" />
       </div>
+
   )
 }
 
