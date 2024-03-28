@@ -13,9 +13,11 @@ const Navbar = ()=>{
       setAnimate(true)
     }else{ setAnimate(false)}
   },[location.pathname])
+
+  // Para los espacios entre links tendras que hacer un div que sera nabvar y ul cambiarlo a navbar__list para meterle  un max-width y que funcione el  space-around correctamente
   
   return (
-    <>
+    <> 
       <ul  className={`navbar ${animate ? 'navbar'&&'navbar--animation' : ''}`}>
         <li className='navbar__item'>
           <Link className='navbar__link' to="/home">HOME</Link>
