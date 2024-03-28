@@ -10,6 +10,7 @@ const [isClicked, setIsClicked] = useState(false);
 
   return(
     <>
+      <div>
         <div 
           className="hamburger"
           onClick={handleMenu}>
@@ -19,6 +20,7 @@ const [isClicked, setIsClicked] = useState(false);
             }>
           </div>
         </div>
+      </div>
     </>
   )
 }

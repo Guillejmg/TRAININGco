@@ -1,9 +1,9 @@
 .hamburger{
   position: relative;
-  bottom: -500px;
-  right: -200px;
+  right: 1rem;
+  z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 3rem;
   height: 3rem;
@@ -55,4 +55,9 @@
 
 .hamburger__container--animated::after{
   transform: rotate(-45deg) translate(30px, 35px);
+}
+
+
+@media (min-width: 800px) {
+  .hamburger{display: none;}
 }
