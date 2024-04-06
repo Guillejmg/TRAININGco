@@ -9,14 +9,14 @@ const Carousel = () => {
     <>
       <div className="carousel">
         <ul className='carousel__list'>
-          <li className='carousel__list-1'>
-            <img className="carousel__img1" src={gym1} alt="imagen del gimnasio 1" />
+          <li className='carousel__item1-list'>
+            <img className="carousel__img1-list" src={gym1} alt="imagen del gimnasio 1" />
           </li>
-          <li className='carousel__list-2'>
-            <img className="carousel__img2" src={gym2} alt="imagen del gimnasio 2" />
+          <li className='carousel__item2-list'>
+            <img className="carousel__img2-list" src={gym2} alt="imagen del gimnasio 2" />
           </li>
-          <li className='carousel__list-3'>
-            <img className="carousel__img3" src={gym1} alt="imagen del gimnasio 3" />
+          <li className='carousel__item3-list'>
+            <img className="carousel__img3-list" src={gym1} alt="imagen del gimnasio 3" />
           </li>
         </ul>
         {/* <ul className="carousel__point" ref= {pictureList}>

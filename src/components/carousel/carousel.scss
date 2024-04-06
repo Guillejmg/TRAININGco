@@ -11,34 +11,34 @@
     width: 300%;// por que hay tres elementos en este div
     list-style-type: none;
 
-    transition: all 11s ease;// Tiempo de duracion  y tipo de movimiento  en la animacion que hems fija  en el traslate
+    transition: all 12s ease;// Tiempo de duracion  y tipo de movimiento  en la animacion que hems fija  en el traslate
     transform: translateX(0%);// Punto  del  eje X donde empieza y se  fija la  animacion,  en este  caso en la primera imagen
-    animation: slide 11s infinite alternate ease-in-out;// Animación, los seg tienen que estar coordinados con los de transition para no da  errores  en la  animacion 
+    animation: slide 12s infinite ease-in-out;// Animación, los seg tienen que estar coordinados con los de transition para no da  errores  en la  animacion 
 
-    .carousel__list-1{
+    .carousel__item1-list{
       width: calc(100%/3);// por que queremos que  cada elemento ocupe  el 100% del espacio en nuestra animación
 
-      .carousel__img1{
+      .carousel__img1-list{
         height: 500px;
         width: 100%;
         box-sizing: border-box;
         }
     }
 
-    .carousel__list-2{
+    .carousel__item2-list{
       width: calc(100%/3);
 
-      .carousel__img2{
+      .carousel__img2-list{
         height: 500px;
         width: 100%;
         box-sizing: border-box;
         }
     }
 
-    .carousel__list-3{
+    .carousel__item3-list{
       width: calc(100%/3);
 
-      .carousel__img3{
+      .carousel__img3-list{
         height: 500px;
         width: 100%;
         box-sizing: border-box;
@@ -74,4 +74,8 @@
     100%{margin-left: -200%;}
   
   }
+}
+
+@media (max-width: 1500px) {
+  .carousel{display: none;}
 }

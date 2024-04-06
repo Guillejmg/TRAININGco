@@ -16,8 +16,8 @@ const Corner = () => {
   
   return(
 
-      <div className={`corner ${animate ? 'corner'&&'animation-active-corner' : ''}`}>
-        <img className="corner_img"  src={logo_vector} alt="logo" />
+      <div className={`corner ${animate ? 'corner'&&'corner--animation' : ''}`}>
+        <img className="corner__img"  src={logo_vector} alt="logo" />
       </div>
       
   )

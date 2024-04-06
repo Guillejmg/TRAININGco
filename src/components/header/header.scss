@@ -1,0 +1,56 @@
+.header__navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #234C8D;
+  box-shadow: 5px 5px 5px black;
+}
+
+.header__click{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__img{
+  height: 45px;
+  width: 155px;
+}
+
+.header__navbar--animation{
+  animation: slideDown 2s ease-out forwards;
+}
+
+@keyframes slideDown { // animation
+  0% {
+    position: relative;
+    top: -10000px;
+  }
+
+  50%{
+    position: fixed;
+    top: 0;
+  }
+
+  75%{
+    position: fixed;
+    top: 0;
+  }
+
+  100% {
+    position: fixed;
+    top: 0;
+  }
+}
+
+@media (min-width:800px) {
+  .header__img{display: none;}
+}
