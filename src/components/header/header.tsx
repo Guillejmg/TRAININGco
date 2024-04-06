@@ -21,7 +21,9 @@ const Header = () => {
       <div className="header">
         <div className={`header__navbar ${animate ? 'header__navbar'&&'header__navbar--animation' : ''}`}>
           <img className='header__img' src={IMG_1335} alt="TRAININGco" />
-          <Navbar/>
+          <div className='header__click'>
+            <Navbar/>
+          </div>
           <HamburgerButton/>
         </div>
         <Corner/>

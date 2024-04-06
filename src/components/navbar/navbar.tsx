@@ -6,8 +6,8 @@ const Navbar = ()=>{
 
   return (
     <> 
-        <ul  className='navbar'>
-          <div className='navbar__list'>
+        <nav  className='navbar navbar__hamburger'>
+          <ul className='navbar__list'>
             <li className='navbar__item'>
               <Link className='navbar__link' to="/home">HOME</Link>
             </li>
@@ -23,8 +23,8 @@ const Navbar = ()=>{
             <li className='navbar__item navbar__item--img'>
               <img className='navbar__img' src={IMG_1335} alt="TRAININGco" />
             </li>
-          </div>
-        </ul>
+          </ul>
+        </nav>
     </>
   )
 }

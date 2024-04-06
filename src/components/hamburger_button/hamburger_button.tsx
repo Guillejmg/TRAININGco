@@ -1,16 +1,21 @@
 import { useState } from 'react';
 import './hamburger_button.scss'
-const HamburgerButton = () => {
+import Navbar from '../navbar/navbar';
+//import React from 'react';
+
+//const actionContext = React.createContext();
+const HamburgerButton: React.FC = () => {
 
 const [isClicked, setIsClicked] = useState(false);
 
-  const handleMenu = () => {
+  const handleMenu= () => {
     setIsClicked(!isClicked)
   }
 
+  //<actionContext.Provider value={isClicked}></actionContext.Provider>
+
   return(
     <>
-      <div>
         <div 
           className="hamburger"
           onClick={handleMenu}>
@@ -19,8 +24,10 @@ const [isClicked, setIsClicked] = useState(false);
             `hamburger__container ${isClicked === true ? 'hamburger__container--animated' : ''}`
             }>
           </div>
+            {isClicked  === true &&(
+                  <Navbar/>
+              )}
         </div>
-      </div>
     </>
   )
 }
