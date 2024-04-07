@@ -1,1 +1,57 @@
+.us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10vw;
 
+}
+
+.presentations{
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill, 
+    minmax(40rem, 1fr)
+    );
+  gap: 1vw;
+  list-style-type: none;
+}
+
+.presentations__list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.presentations__img{
+  max-width: 40rem;
+  border-radius: .3rem;
+}
+
+.presentations__each{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  border-radius: .3rem 0 0 .3rem;
+  margin: 0;
+  gap: 1rem;
+  position: absolute;
+  text-align: center;
+  padding: 1rem 1rem;
+  padding-top: 2rem;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background-color: #aaaaaa;
+  opacity: 90%;
+  color: white;
+}
+
+.presentations__name{
+  display: inline;
+}
+
+.presentations__text{
+  text-align: center;
+}
