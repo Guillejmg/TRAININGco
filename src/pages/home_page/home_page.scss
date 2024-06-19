@@ -1,5 +1,14 @@
+
 .home_page{
+  border: 2px solid green ;
   background-color: #6DB5E5;
-  height: 100rem;
+  height: 100%;
   width: 100%;
+}
+
+@media(max-width: 768px){
+  .home_page{
+    height: 100%;
+
+  }
 }

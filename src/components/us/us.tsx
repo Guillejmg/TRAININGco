@@ -3,7 +3,7 @@ const Us = () => {
   return(
     <>
       <div className="us">
-        <p>a ver que tal queda</p>
+        <p></p>
       </div>
     </>
   )
