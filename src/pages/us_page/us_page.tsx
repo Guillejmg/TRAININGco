@@ -4,6 +4,8 @@ import './us_page.scss'
 import gimImage from "../../assets/gym1.jpg"
 import Lourdesimg from "../../assets/LOURDES.jpg"
 import Carlosimg from "../../assets/CARLOS.jpg"
+import Estebaimg from "../../assets/ESTEBAN.jpg"
+import Miguelimg from "../../assets/MIGUEL.jpg"
 
 const UsPage = () => {
   return (
@@ -41,20 +43,23 @@ const UsPage = () => {
         </div>
 
         <div className="staff-member">
-          <img src="/mnt/data/IMG_4062.jpg" alt="Personal 3" className="staff-photo"/>
+          <img src={Estebaimg} alt="Personal 3" className="staff-photo"/>
           <div className="staff-description">
-            <h3>Nombre del Personal 3</h3>
-            <h4>Descripción del Personal 3</h4>
-            <p>Descripción adicional del Personal 3</p>
+            <h3>ESTEBAN</h3>
+            <h4>CROSSTRAINING & HIT</h4>
+            <p>GRADUADO EN CC DE LA ACTIVIDAD FÍSICA Y EL DEPORTE</p>
+            <p>EUROPEAN QUALIFIER NETWORK. ENTRENAMIENTO PERSONAL Y FUERZA</p>
+            <p>PREPARADOR FÍSICO DE FÚTBOL</p>
           </div>
         </div>
 
         <div className="staff-member">
-          <img src="/mnt/data/IMG_4062.jpg" alt="Personal 4" className="staff-photo"/>
+          <img src={Miguelimg} alt="Personal 4" className="staff-photo"/>
           <div className="staff-description">
-            <h3>Nombre del Personal 4</h3>
-            <h4>Descripción del Personal 4</h4>
-            <p>Descripción adicional del Personal 4</p>
+            <h3>MIGUEL</h3>
+            <h4>ANÁLISIS DEL MOVIMIENTO Y ENTRENAMIENTO ADAPTADO</h4>
+            <p>GRADUADO EN CC DE LA ACTIVIDAD FÍSICA Y EL DEPORTE</p>
+            <p>MASTER EN FISIOTERAPIA Y FISIOLOGIA DEL DEPORTE</p>
           </div>
         </div>
       </div>
