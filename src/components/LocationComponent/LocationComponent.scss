@@ -1,0 +1,32 @@
+.Location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+    height: 100%;
+    border-radius: 8px;
+    // border: 1px solid red;
+    padding: 10px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    height: 30px; 
+    width: 30px; 
+    margin-right: 10px; 
+    border-radius: 50%;
+    background: #234C8D; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon .ionicon {
+    fill: white; /* Color del icono */
+  }
+  

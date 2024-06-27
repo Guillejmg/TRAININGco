@@ -1,5 +1,73 @@
-.us_page{
-  background-color: #6DB5E5;
-  height: 100rem;
+.us_page {
+ background-image: url("../../assets/o_este_tambien.jpg");
+ background-size:cover;
+ background-position: center;
+  height: 100%;
   width: 100%;
+  padding-bottom: 50px; /* Añadimos padding inferior a toda la página */
+}
+
+.hero-image img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.team-title {
+  display: flex;
+  justify-content: center;
+  background: #234c8d;
+  padding: 20px 0;
+  margin-top: -8px; 
+  h1 {
+    color: white;
+    margin: 0;
+  }
+}
+
+.staff-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.staff-member {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #234c8dbe;
+  width: 90%; 
+  max-width: 500px;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+.staff-photo {
+  width: 150px;
+  height: 150px; 
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.staff-description {
+  flex: 1;
+  h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: white; 
+  }
+  h4 {
+    margin: 0 0 10px;
+    font-size: 1em;
+    color: black;
+  }
+  p {
+    margin: 0;
+    color: white;
+  }
 }
