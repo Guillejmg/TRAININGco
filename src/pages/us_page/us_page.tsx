@@ -1,23 +1,19 @@
 import Header from "../../components/header/header"
 import Us from "../../components/us/us"
 import './us_page.scss'
-import gim1 from "../../assets/IMG_3823.jpg"
 import gim2 from "../../assets/IMG_3836.jpg"
-import gim3 from "../../assets/IMG_3851.jpg"
 import Lourdesimg from "../../assets/LOURDES.jpg"
 import Carlosimg from "../../assets/CARLOS.jpg"
 import Estebaimg from "../../assets/ESTEBAN.jpg"
 import Miguelimg from "../../assets/MIGUEL.jpg"
-import GoogleReviews from "../../Reviews_Google/ReviewsComponent"
+// Import GoogleReviews from "../../Reviews_Google/ReviewsComponent"
 const UsPage = () => {
   return (
     <div className="us_page">
       <Us />
       <Header />
       <div className="hero-image">
-        {/* <img src={gim1} alt="Gym" /> */}
         <img src={gim2} alt="Gym" />
-        {/* <img src={gim3} alt="Gym" /> */}
       </div>
       <div className="team-title">
         <h1 style={{color:"white"}}>CONOCE AL EQUIPO</h1>
@@ -72,6 +68,33 @@ const UsPage = () => {
       </div>
     </div>
   )
+  /* <div className="us">
+        <p>a ver que tal queda</p>
+        <ul className='presentations'>
+          <li className='presentations__list'>
+            <img className='presentations__img' loading='lazy' src={carlos} alt="carlos" />
+            <div className='presentations__each'>
+              <h2 className='presentation__name'>Carlos Padial Mariscal</h2>
+              <p className='presentations__text'>dncwinwornvowr bvworvbosrnvowrnv</p>
+            </div>
+          </li>
+          <li className='presentations__list'>
+            <img className='presentations__img' loading='lazy' src={esteban} alt="esteban" />
+            <div className='presentations__each'>
+              <h2 className='presentation__name'>Carlos Padial Mariscal</h2>
+              <p className='presentations__text'>dncwinwornvowr bvworvbosrnvowrnv</p>
+            </div>
+          </li>
+          <li className='presentations__list'>
+            <img className='presentations__img' loading='lazy' src={miguel} alt="miguel" />
+            <div className='presentations__each'>
+              <h2 className='presentations__name'>Carlos Padial Mariscal</h2>
+              <p className='presentations__text'>dncwinwornvowr bvworvbosrnvowrnv</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </>*/
 }
 
 export default UsPage
