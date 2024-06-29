@@ -21,7 +21,7 @@ const Opening = () => {
         <Link className='opening__link' to="/home">
           <button className='opening__button' type='button'>
             <p className='opening__text'>Pulsa el logo</p> 
-            <img className='opening__logo' src={logo_vector} alt='logo'/>
+            <img className='opening__logo' loading='lazy' src={logo_vector} alt='logo'/>
             <p className='opening__typewriter'> Somos {text} <Cursor cursorStyle= '<'/></p>
           </button>
         </Link>

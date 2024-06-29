@@ -23,6 +23,7 @@ const HomePage = () => {
           <GeocodingComponent />
       </div>
     
+
     </div>
   );
 };

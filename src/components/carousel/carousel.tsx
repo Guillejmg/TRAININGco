@@ -21,6 +21,7 @@ const Carousel = () => {
           </li>
           <li className='carousel__item3-list'>
             <img className="carousel__img3-list" src={gimpadi3} alt="imagen del gimnasio 3" />
+
           </li>
         </ul>
         {/* <ul className="carousel__point" ref= {pictureList}>

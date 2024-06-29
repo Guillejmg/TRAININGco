@@ -79,6 +79,10 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1500px){
+  .carousel{display: none;}
+}
+
+@media (min-width: 1700px){
   .carousel{display: none;}
 }
