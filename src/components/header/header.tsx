@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar';
 import './header.scss'
 import IMG_1335 from '../../assets/IMG_1335.jpg'
 import { useLocation } from 'react-router-dom';
-import HamburgerButton from '../hamburger_button/hamburger_button';
+
 const Header = () => {
 
   const [animate, setAnimate] = useState(false);
@@ -24,7 +24,6 @@ const Header = () => {
           <div className='header__click'>
             <Navbar/>
           </div>
-          <HamburgerButton/>
         </div>
         <Corner/>
       </div>
