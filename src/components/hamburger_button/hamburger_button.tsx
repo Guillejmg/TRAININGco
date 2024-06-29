@@ -1,9 +1,9 @@
 import './hamburger_button.scss'
 import React, { useState } from 'react';
 
- export const HamburgerButton: React.FC = () => {
+  export const HamburgerButton: React.FC = () => {
 
- const [isClicked, setIsClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   return(
     <>
