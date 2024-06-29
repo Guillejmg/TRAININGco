@@ -1,6 +1,4 @@
 import './carousel.scss'
-import gym1 from '../../assets/gym1.jpg'
-import gym2 from '../../assets/gym2.jpg'
 import gimpadi from "../../assets/IMG_3823.jpg"
 import gimpadi2 from "../../assets/IMG_3836.jpg"
 import gimpadi3 from "../../assets/IMG_3851.jpg"

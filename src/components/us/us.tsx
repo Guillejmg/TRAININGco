@@ -1,7 +1,7 @@
 import './us.scss';
-import carlos from '../../assets/carlos.jpg';
-import esteban from '../../assets/esteban.jpg';
-import miguel from '../../assets/miguel.jpg';
+import carlos from '../../assets/CARLOS.jpg';
+import esteban from '../../assets/ESTEBAN.jpg';
+import miguel from '../../assets/MIGUEL.jpg';
 import './us.scss'
 const Us = () => {
   return(
