@@ -1,19 +1,23 @@
 import Header from "../../components/header/header"
 import Us from "../../components/us/us"
 import './us_page.scss'
-import gimImage from "../../assets/gym1.jpg"
+import gim1 from "../../assets/IMG_3823.jpg"
+import gim2 from "../../assets/IMG_3836.jpg"
+import gim3 from "../../assets/IMG_3851.jpg"
 import Lourdesimg from "../../assets/LOURDES.jpg"
 import Carlosimg from "../../assets/CARLOS.jpg"
 import Estebaimg from "../../assets/ESTEBAN.jpg"
 import Miguelimg from "../../assets/MIGUEL.jpg"
-
+import GoogleReviews from "../../Reviews_Google/ReviewsComponent"
 const UsPage = () => {
   return (
     <div className="us_page">
       <Us />
       <Header />
       <div className="hero-image">
-        <img src={gimImage} alt="Gym" />
+        {/* <img src={gim1} alt="Gym" /> */}
+        <img src={gim2} alt="Gym" />
+        {/* <img src={gim3} alt="Gym" /> */}
       </div>
       <div className="team-title">
         <h1 style={{color:"white"}}>CONOCE AL EQUIPO</h1>
@@ -61,6 +65,9 @@ const UsPage = () => {
             <p>GRADUADO EN CC DE LA ACTIVIDAD FÍSICA Y EL DEPORTE</p>
             <p>MASTER EN FISIOTERAPIA Y FISIOLOGIA DEL DEPORTE</p>
           </div>
+        </div>
+        <div>
+        {/* <GoogleReviews/> */}
         </div>
       </div>
     </div>

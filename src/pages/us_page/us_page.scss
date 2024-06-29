@@ -7,9 +7,14 @@
   padding-bottom: 50px; /* Añadimos padding inferior a toda la página */
 }
 
-.hero-image img {
-  height: 450px;
+.hero-image {
+  display: flex;
   width: 100%;
+}
+
+.hero-image img {
+  flex: 1;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -40,9 +45,9 @@
   gap: 20px;
   padding: 20px;
   border-radius: 8px;
-  background-color: #234c8de3;
-  width: 90%;
-  max-width: 500px;
+  background-color: #2d61b49c;
+  width: 50%; /* Ajustar el ancho para ser más cuadrado */
+  max-width: 400px; /* Reducir max-width */
   height: auto; /* Permitir que la altura se ajuste al contenido */
   box-sizing: border-box;
   margin-bottom: 20px; /* Añadir margen inferior para separación */
@@ -91,7 +96,7 @@
   }
 
   .staff-member {
-    width: 45%; /* Ajustar el ancho para que se vean dos columnas */
+    width: 40%; /* Ajustar el ancho para que se vean más cuadrados */
     max-width: none; /* Permitir que crezcan */
     margin-bottom: 20px; /* Mantener margen inferior para separación */
   }
