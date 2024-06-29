@@ -1,0 +1,83 @@
+.contact-page {
+  background-color: #234c8d;
+}
+
+.hero-image img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-image: url("../../assets/o_este_tambien.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-form {
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%; /* Ajustar ancho al 100% del contenedor */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.contact-map {
+  flex: 1;
+  margin-top: 9px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  max-width: 400px;
+  max-height: 300px;
+  width: 100%; /* Ajustar ancho al 100% del contenedor */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+
+  .location-container {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Ajustar padding para pantallas pequeñas */
+  }
+
+  .contact-form,
+  .contact-map {
+    margin: 10px 0; /* Añadir margen vertical para separación */
+    max-width: 100%; /* Asegurar que el ancho sea 100% del viewport */
+    width: 100%; /* Asegurar que el ancho sea 100% del contenedor */
+  }
+
+  .contact-map {
+    margin-left: 0; /* Quitar margen izquierdo */
+  }
+}
+
+/* Asegurar que el formulario se ajuste a su contenedor */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button {
+  width: 100%; /* Asegurar que los elementos del formulario ocupen todo el ancho del contenedor */
+  margin-bottom: 10px; /* Añadir margen inferior para separación */
+  box-sizing: border-box;
+}

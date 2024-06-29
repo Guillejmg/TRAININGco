@@ -1,8 +1,23 @@
-.home-page{
-  background-image: url(../../assets/fondo_suelo_wood.jpg.webp);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
+
+.home_page{
+  border: 2px solid green ;
+  background-color: #6DB5E5;
+  height: 100rem;
+  width: 100rem;
+
+}
+.principal{
+height:250px
+}
+
+@media(max-width: 768px){
+  .home_page{
+    height: 100%;
+
+  }
+  .principal{
+    height: 200px;
+  }
 }
 
 // .home-page__img{
