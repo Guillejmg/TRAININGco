@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "sass": "sass scss:css -w --no-source-map",
     "api": "json-server --watch ./api/db.json",
-     "build:server": "tsc -p tsconfig.node.json",
+    "build:server": "tsc -p tsconfig.node.json",
     "start:server": "node dist/server.js",
     "dev:server": "ts-node-dev --project tsconfig.node.json src/server.ts"
   },

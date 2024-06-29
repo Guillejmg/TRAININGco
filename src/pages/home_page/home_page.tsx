@@ -10,7 +10,7 @@ const HomePage = () => {
       <Carousel />
       <Header />
       <div style={{display:"flex", marginTop:"1px", border:"1px solid red"}}>
- <img className="principal" src={gimImage}  />
+  <img className="principal" src={gimImage}  />
 
       </div>
       <div style={{display:"flex", border:"2px solid red", marginTop:"30px", marginLeft:"5px"}} >
@@ -20,7 +20,7 @@ const HomePage = () => {
         </p>
       </div>
       <div style={{display:"flex", marginTop:"20px",  marginLeft:"5px"}}>
-           <GeocodingComponent />
+          <GeocodingComponent />
       </div>
     
     </div>
