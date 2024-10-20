@@ -68,9 +68,13 @@
   .navbar{display: none;}
 }
 
-// @media (max-width:800px) {
-//   .navbar__hamburger{display: block;}
-// }
+@media (max-width:800px) {
+  .navbar__hamburger{
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
 
 @media (min-width: 1500px) {
   .navbar__list{max-width: 70%;}
